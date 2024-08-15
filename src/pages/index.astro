@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import { Image } from "astro:assets";
+import myLogo from "../assets/images/logo-light.svg";
+---
+
+<Layout title="Workit landing page.">
+  <header class="bg-[#24053E] flex items-center justify-between pt-8 px-4 md:px-[2.44rem] xl:px-[10.31rem] xl:pt-14">
+    <Image src={myLogo} alt="The Logo." />
+    <a
+      href="#"
+      class="text-base font-bold leading-8 tracking-[-0.01rem] text-white xl:text-lg"
+      >Apply for access</a
+    >
+  </header>
+</Layout>
